@@ -1,0 +1,51 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified">
+
+
+	<xs:element name="getCoffeeResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="coffeeDrink" type="coffeeDrink" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="coffeeDrink">
+		<xs:sequence>
+			<xs:element name="ingredient" type="ingredient"
+				fixed="ESPRESSO" />
+		</xs:sequence>
+	</xs:complexType>
+
+
+
+	<xs:complexType name="cappuccino">
+		<xs:complexContent>
+			<xs:extension base="coffeeDrink">
+				<xs:sequence>
+					<xs:element name="name" type="xs:string" />
+					<xs:element name="ingredient" type="ingredient" />
+					<xs:element name="ingredient" type="ingredient" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="americano">
+		<xs:sequence>
+			<xs:element name="name" type="xs:string" />
+			<xs:element name="ingredient" type="ingredient" />
+			<xs:element name="ingredient" type="ingredient" />
+		</xs:sequence>
+	</xs:complexType>
+
+
+
+	<xs:simpleType name="ingredient">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="WATER" />
+			<xs:enumeration value="MILK_FOAM" />
+			<xs:enumeration value="ESPRESSO" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
