@@ -1,4 +1,4 @@
-package com.example.coffee.drink;
+package com.example.coffee.functions;
 
 import org.junit.jupiter.api.Test;
 

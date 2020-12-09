@@ -1,8 +1,8 @@
-package com.example.coffee.drink;
+package com.example.coffee.pojo;
 
 public enum Ingredient {
 
-	HOT_WATER, ESPRESSO_SHOT, MILK_FOAM;
+	HOT_WATER, ESPRESSO_SHOT, MILK_FOAM,NO_INGREDIENTS_FOUND;
 
 	@Override
 	public String toString() {
@@ -15,8 +15,9 @@ public enum Ingredient {
 		case MILK_FOAM:
 			return "milk";
 		default:
-			return "";
+			return "no ingredients found";
 		}
+		
 
 	}
 

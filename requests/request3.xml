@@ -1,0 +1,12 @@
+<soapenv:Envelope
+	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:gs="http://makemycoffee.com/mydrink">
+	<soapenv:Header />
+	<soapenv:Body>
+		<gs:getCoffeeDrinkRequest>
+
+			<gs:requestIngredientList>espresso water</gs:requestIngredientList>
+
+		</gs:getCoffeeDrinkRequest>
+	</soapenv:Body>
+</soapenv:Envelope>

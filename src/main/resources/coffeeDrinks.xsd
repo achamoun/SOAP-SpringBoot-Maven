@@ -1,0 +1,51 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://makemycoffee.com/mydrink"
+	targetNamespace="http://makemycoffee.com/mydrink"
+	elementFormDefault="qualified">
+
+
+	<!-- Request and Response schemata of the IngredientFinder web service -->
+
+	<xs:element name="getCoffeeDrinkIngredientsRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="requestCoffeeDrink" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="getCoffeeDrinkIngredientsResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ResponseIngredientList"
+					type="tns:ingredientList" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+
+	<!-- Request and Response schemata of the CoffeeDrinkFinder web service -->
+
+	<xs:element name="getCoffeeDrinkRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="requestIngredientList"
+					type="tns:ingredientList" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+
+	<xs:element name="getCoffeeDrinkResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="responseCoffeeDrink" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+
+	<xs:simpleType name="ingredientList">
+		<xs:list itemType="xs:string"/>
+	</xs:simpleType>
+</xs:schema>

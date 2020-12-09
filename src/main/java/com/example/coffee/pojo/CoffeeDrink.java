@@ -1,4 +1,4 @@
-package com.example.coffee.drink;
+package com.example.coffee.pojo;
 
 public class CoffeeDrink {
 
@@ -8,7 +8,7 @@ public class CoffeeDrink {
 		return coffeeDrinkName;
 	}
 
-	protected void setCoffeeDrink(Drink coffeeDrink) {
+	public void setCoffeeDrink(Drink coffeeDrink) {
 		this.coffeeDrinkName = coffeeDrink;
 	}
 

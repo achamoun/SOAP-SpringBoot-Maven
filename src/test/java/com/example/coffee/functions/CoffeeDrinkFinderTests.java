@@ -1,4 +1,4 @@
-package com.example.coffee.drink;
+package com.example.coffee.functions;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
@@ -6,6 +6,9 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import java.util.ArrayList;
 
 import org.junit.jupiter.api.Test;
+
+import com.example.coffee.functions.CoffeeDrinkFinder;
+import com.example.coffee.pojo.Drink;
 
 public class CoffeeDrinkFinderTests {
 

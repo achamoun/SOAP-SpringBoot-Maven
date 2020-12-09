@@ -1,8 +1,8 @@
-package com.example.coffee.drink;
+package com.example.coffee.pojo;
 
 public enum Drink {
 
-	CAPPUCCINO, AMERICANO;
+	CAPPUCCINO, AMERICANO,NO_SUCH_DRINK;
 
 	@Override
 	public String toString() {
@@ -13,7 +13,7 @@ public enum Drink {
 		case AMERICANO:
 			return "americano";
 		default:
-			return "";
+			return "no such drink";
 		}
 	}
 

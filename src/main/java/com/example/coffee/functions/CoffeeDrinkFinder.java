@@ -1,6 +1,12 @@
-package com.example.coffee.drink;
+package com.example.coffee.functions;
 
 import java.util.List;
+
+import com.example.coffee.pojo.Americano;
+import com.example.coffee.pojo.Cappuccino;
+import com.example.coffee.pojo.CoffeeDrink;
+import com.example.coffee.pojo.Drink;
+import com.example.coffee.pojo.Ingredient;
 
 /**
  * This class offers methods to find out a coffee drink according to some
@@ -21,10 +27,13 @@ public class CoffeeDrinkFinder {
 	public CoffeeDrink getCoffeeDrink(List<String> ingerdientList) {
 
 		if (isCappuccino(ingerdientList))
-			return new Cappucinno();
+			return new Cappuccino();
 		if (isAmericano(ingerdientList))
 			return new Americano();
-		return null;
+
+		CoffeeDrink drinkNotFound = new CoffeeDrink();
+		drinkNotFound.setCoffeeDrink(Drink.NO_SUCH_DRINK);
+		return drinkNotFound;
 	}
 
 	private boolean isCappuccino(List<String> ingerdientList) {

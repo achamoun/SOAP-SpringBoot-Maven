@@ -1,12 +1,12 @@
-package com.example.coffee.drink;
+package com.example.coffee.pojo;
 
 import java.util.ArrayList;
 
-public class Cappucinno extends CoffeeDrink {
+public class Cappuccino extends CoffeeDrink {
 
 	private ArrayList<Ingredient> ingredientList;
 
-	public Cappucinno() {
+	public Cappuccino() {
 
 		ingredientList = new ArrayList<Ingredient>();
 		ingredientList.add(Ingredient.ESPRESSO_SHOT);
