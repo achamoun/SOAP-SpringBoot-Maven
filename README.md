@@ -25,9 +25,8 @@ The URL you have to send requests to is  http://localhost:8080/webservices
 1. Several Web services can be published in one URL in SOAP. In my example it is http://localhost:8080/webservices \
 In REST each web service is being published in a unique URL. Check out the REST web services Repository later on.
 2. The web service and its parameter will be listed in an .xml file and Send to the URL, where the SOAP web services are being published.
-Check out the folder "requests". \
-In REST the web service and its parameter are included in the URL you call.
+Check out the folder "requests". In REST the web service and its parameter are included in the URL you call.
 
-P.S. : To compare SOAP and REST i published the same web services of the package "com.example.coffee.functions" as REST web services.\ Check out the repository REST web service and see the difference.
+P.S. : To compare SOAP and REST i published the same web services of the package "com.example.coffee.functions" as REST web services. Check out the repository REST web service and see the difference.
 
 
