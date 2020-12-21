@@ -21,7 +21,7 @@ The URL you have to send requests to is  http://localhost:8080/webservices
 
 
 
-#### Main differences between SOAP and REST:
+### Main differences between SOAP and REST:
 1. Several Web services can be published in one URL in SOAP. In my example it is http://localhost:8080/webservices \
 In REST each web service is being published in a unique URL. Check out the REST web services Repository later on.
 2. The web service and its parameter will be listed in an .xml file and Send to the URL, where the SOAP web services are being published.
