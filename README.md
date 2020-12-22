@@ -8,7 +8,7 @@ Spring Boot adopts the contract first approch in creating SOAP web services. You
 Spring Boot will use this .xsd file to creat and publish the .wsdl file of your web services. Check out the file "main/resources/coffeeDrinks.xsd" 
 ### 3. Creating java classes from the .wsdl file:
 After creating the .wsdl file, you need to creat the java classes from the .wsdl file. \
-Open Terminal, go to your project, go to the folder where the file "mvnw.cmd" is. run the command ./mvnw clean package\
+Open Terminal, go to your project, go to the folder where the file "mvnw" is. run the command ./mvnw clean package\
 The classes will be created the the "target" package.
 ### 4. Publishing the web services:
 Publishing the web services with Spring Boot is done in the classes in the package "com.example.coffee"
